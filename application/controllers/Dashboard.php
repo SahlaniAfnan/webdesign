@@ -5,10 +5,10 @@
     public function index()
     {
       // Data ini akan ditampilkan di header.php pada tag <title>
-      $data["pageTitle"] = "Dashboard";
+      $data['pageTitle'] = 'Dashboard';
 
       // Data ini akan ditampilkan di content.php
-      $data["pageContent"] = $this->load->view("dashboard/main.php", NULL, TRUE);
+      $data['pageContent'] = $this->load->view('dashboard/main.php', NULL, TRUE);
 
       // Memanggil view layout.php
       $this->load->view("template/layout", $data);
